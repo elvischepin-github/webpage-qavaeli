@@ -106,7 +106,7 @@ const fourthH1 = outro.querySelector('.fourthH1');
 window.addEventListener('scroll', () => {
   const One = window.scrollY;
   // console.log(scrolled);
-  if (Math.ceil(One) > 7400 && Math.ceil(One) < 8900) {
+  if (Math.ceil(One) > 7400 && Math.ceil(One) < 8500) {
     fourthH1.classList.add('scrolledFirst');
   } else {
     fourthH1.classList.remove('scrolledFirst');
