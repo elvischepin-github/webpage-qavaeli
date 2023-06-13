@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scroll Video Play</title>
+  </head>
+  <body>
+    <div class="intro">
+      <h1 class="firstH1">HELLO</h1>
+      <h1 class="secondH1">FRONTEND</h1>
+      <video src="/video/video-60fps-1.mov"></video>
+    </div>
+
+    <section class="interlude">
+      <div class="background">
+        <div class="interlude-container">
+          <img src="/image/logo.png" alt="logo" />
+          <hr />
+          <hr />
+          <h1>Qavaeli</h1>
+          <p>
+            Welcome to the age of perpetual innovation, where technology's
+            ceaseless evolution reshapes our world with unprecedented speed,
+            empowering and challenging us in ways we never imagined.
+          </p>
+          <hr />
+          <hr />
+          <nav>
+            <div>
+              <button class="button-1" onclick="openTab1()">INTRO</button>
+            </div>
+            <div>
+              <button class="button-2" onclick="openTab2()">WORK</button>
+            </div>
+            <div>
+              <button class="button-3" onclick="openTab3()">ABOUT</button>
+            </div>
+            <div>
+              <button class="button-4" onclick="openTab4()">CONTACT</button>
+            </div>
+          </nav>
+          <p>© ALL RIGHTS PROTECTED</p>
+        </div>
+      </div>
+      <article id="tab-1" class="tab-content">
+        <i class="fi fi-tr-circle-xmark exit-box"></i>
+        <p class="tab-paragraph">PRODUCT'S IMMENSE DEPTH</p>
+        <div class="glass"></div>
+      </article>
+      <article id="tab-2" class="tab-content">
+        <i class="fi fi-tr-circle-xmark exit-box"></i>
+        <p class="tab-paragraph">ANIMATIONS CREATED WITH BLENDER</p>
+      </article>
+      <article id="tab-3" class="tab-content">
+        <i class="fi fi-tr-circle-xmark exit-box"></i>
+        <p class="tab-paragraph">BY ELVIS</p>
+      </article>
+      <article id="tab-4" class="tab-content">
+        <i class="fi fi-tr-circle-xmark exit-box"></i>
+        <p class="tab-paragraph">THANK YOU</p>
+      </article>
+    </section>
+
+    <div class="outro">
+      <h1 class="thirdH1">BACKEND</h1>
+      <h1 class="fourthH1">BYE</h1>
+      <video src="/video/video-60fps-2.mov"></video>
+    </div>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scroll-Magic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
