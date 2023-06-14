@@ -58,8 +58,9 @@ h1.scrolledSecond {
 }
 
 .intro video {
-  height: 100%;
+  height: 90vh;
   width: 100%;
+  padding-bottom: 100px;
 }
 /* Interlude (middle) */
 section.interlude {
@@ -232,8 +233,9 @@ p.tab-paragraph {
   transform: translate(-50%, -50%);
 }
 .outro video {
-  height: 100%;
+  height: 90vh;
   width: 100%;
+  padding-bottom: 100px;
 }
 /* --- */
 @keyframes spin {
