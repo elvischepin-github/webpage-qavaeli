@@ -249,6 +249,14 @@ p.tab-paragraph {
 }
 
 @media (max-width: 1000px) {
+  .intro h1,
+  .outro h1 {
+    font-size: 24px;
+  }
+  h1.scrolledFirst,
+  h1.scrolledSecond {
+    letter-spacing: 50px;
+  }
   section.interlude {
     scale: 0.8;
     transition: 0.33s;
