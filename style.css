@@ -13,7 +13,7 @@ html {
 .intro,
 .outro {
   padding-top: 100px;
-  height: 900px;
+  max-height: 900px;
   background-color: black;
   /* border: 1px solid red; */
 }
@@ -70,6 +70,7 @@ section.interlude {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.33s;
 }
 section div.background {
   position: relative;
@@ -244,5 +245,17 @@ p.tab-paragraph {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  section.interlude {
+    scale: 0.8;
+    transition: 0.33s;
+  }
+}
+@media (max-width: 768px) {
+  section.interlude {
+    scale: 0.6;
   }
 }

@@ -55,7 +55,7 @@ scene2.on('update', (e) => {
   scrollPos2 = (e.scrollPos - 5200) / 1000; // e.scrollPos from Scroll Magic
 
   // console.log(scrollPos2);
-  console.log(e);
+  // console.log(e);
 });
 
 setInterval(() => {
