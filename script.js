@@ -43,7 +43,7 @@ setInterval(() => {
 // SCROLL MAGIC 2@2@2@2@2@2@2@2@2@2@2@2@2@2@2@2@2
 //      Scene 2
 let scene2 = new ScrollMagic.Scene({
-  duration: 3400,
+  duration: 3500,
   triggerElement: outro,
   triggerHook: 0,
 })
