@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Ysabeau;
 }
@@ -22,11 +30,15 @@ html {
   font-size: 36px;
   color: white;
   opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   letter-spacing: 30px;
   padding-left: 30px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-shadow: 0 0 2px white;
 }
@@ -35,11 +47,15 @@ html {
   font-size: 36px;
   color: white;
   opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   letter-spacing: 30px;
   padding-left: 30px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-shadow: 0 0 2px white;
 }
@@ -47,12 +63,16 @@ html {
 h1.scrolledFirst {
   opacity: 1;
   letter-spacing: 50px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   padding-left: 50px;
 }
 h1.scrolledSecond {
   opacity: 1;
   letter-spacing: 70px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   padding-left: 70px;
 }
@@ -67,21 +87,44 @@ section.interlude {
   background-color: black;
   /* border: 1px solid white; */
   height: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: 0.33s;
+  -o-transition: 0.33s;
   transition: 0.33s;
 }
 section div.background {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 div.interlude-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .interlude img {
@@ -90,16 +133,21 @@ div.interlude-container {
   border-radius: 100%;
   margin-bottom: 50px;
   padding: 15px;
+  -webkit-animation: spin 1s alternate infinite;
   animation: spin 1s alternate infinite;
+  -webkit-box-shadow: 0 0 5px white, inset 0 0 5px white;
   box-shadow: 0 0 5px white, inset 0 0 5px white;
   z-index: 2;
 }
 .interlude hr {
   border: 1px solid white;
+  -webkit-box-shadow: 0 0 10px white;
   box-shadow: 0 0 10px white;
 }
 .interlude hr:nth-of-type(1) {
   width: 102px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .interlude hr:nth-of-type(2) {
@@ -131,23 +179,40 @@ div.interlude-container {
 }
 .interlude hr:nth-of-type(4) {
   width: 100px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   margin: 49px 0 49px 0;
 }
 .interlude nav {
+  -webkit-box-shadow: 0 0 5px white;
   box-shadow: 0 0 5px white;
   z-index: 2;
   border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   min-width: 625px;
   border-radius: 30px;
 }
 .interlude nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   border-bottom-right-radius: 30px;
 }
@@ -160,6 +225,8 @@ div.interlude-container {
   letter-spacing: 5px;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.33s;
+  -o-transition: 0.33s;
   transition: 0.33s;
 }
 .interlude nav div button:hover {
@@ -179,6 +246,7 @@ nav div:nth-child(3) {
 }
 /* Tabs */
 article div.glass {
+  -webkit-filter: blur(5px);
   filter: blur(5px);
   border: none;
   width: 100%;
@@ -197,19 +265,33 @@ article i.exit-box {
   position: absolute;
   top: 3%;
   right: 3%;
+  -webkit-transition: 0.33s;
+  -o-transition: 0.33s;
   transition: 0.33s;
 }
 i.exit-box:hover {
   scale: 0.9;
+  -webkit-transition: 0.33s;
+  -o-transition: 0.33s;
   transition: 0.33s;
 }
 article.tab-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   color: white;
   border: 1px solid white;
+  -webkit-box-shadow: inset 0 0 80px -45px white;
   box-shadow: inset 0 0 80px -45px white;
   font-size: 1.1em;
   width: 650px;
@@ -231,6 +313,8 @@ p.tab-paragraph {
   color: white;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .outro video {
@@ -239,11 +323,23 @@ p.tab-paragraph {
   padding-bottom: 100px;
 }
 /* --- */
-@keyframes spin {
+@-webkit-keyframes spin {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -259,6 +355,8 @@ p.tab-paragraph {
   }
   section.interlude {
     scale: 0.8;
+    -webkit-transition: 0.33s;
+    -o-transition: 0.33s;
     transition: 0.33s;
   }
 }
