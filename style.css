@@ -34,7 +34,7 @@ html {
   -o-transition: 1s;
   transition: 1s;
   letter-spacing: 30px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@ html {
   -o-transition: 1s;
   transition: 1s;
   letter-spacing: 30px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -361,6 +361,10 @@ p.tab-paragraph {
   }
 }
 @media (max-width: 768px) {
+  .intro video,
+  .outro video {
+    height: auto;
+  }
   section.interlude {
     scale: 0.6;
   }
