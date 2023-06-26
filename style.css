@@ -86,7 +86,6 @@ h1.scrolledSecond {
 
 section.interlude {
   background-color: black;
-  opacity: 1;
   /* border: 1px solid white; */
   height: 850px;
   display: -webkit-box;
@@ -101,9 +100,8 @@ section.interlude {
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
-  transition: opacity 2s;
+  opacity: 1;
 }
-
 .opacity {
   opacity: 0;
   transition: 2s;
@@ -330,6 +328,20 @@ p.tab-paragraph {
   width: 100%;
   padding-bottom: 100px;
 }
+/* Mobile */
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  letter-spacing: 3px;
+  background-color: black;
+  color: white;
+  font-family: Ysabeau;
+  display: none;
+  font-size: 12px;
+}
 /* --- */
 @-webkit-keyframes spin {
   from {
@@ -375,5 +387,22 @@ p.tab-paragraph {
   }
   section.interlude {
     scale: 0.6;
+  }
+}
+@media (max-width: 500px) {
+  .mobile {
+    display: flex;
+  }
+  div.scrollmagic-pin-spacer {
+    display: none;
+  }
+  div.intro {
+    display: none;
+  }
+  section.interlude {
+    display: none;
+  }
+  div.outro {
+    display: none;
   }
 }
