@@ -77,6 +77,8 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// (fading interlude)
+
 const interludeContainer = document.querySelector('.interlude-container');
 
 window.addEventListener('scroll', () => {
