@@ -83,8 +83,10 @@ h1.scrolledSecond {
   padding-bottom: 100px;
 }
 /* Interlude (middle) */
+
 section.interlude {
   background-color: black;
+  opacity: 1;
   /* border: 1px solid white; */
   height: 850px;
   display: -webkit-box;
@@ -98,7 +100,12 @@ section.interlude {
   justify-content: center;
   -webkit-transition: 0.33s;
   -o-transition: 0.33s;
-  transition: 0.33s;
+  transition: 1s;
+}
+
+.opacity {
+  opacity: 0;
+  transition: 1s;
 }
 section div.background {
   position: relative;

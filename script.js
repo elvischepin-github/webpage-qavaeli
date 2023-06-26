@@ -77,6 +77,18 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const interludeContainer = document.querySelector('.interlude-container');
+
+window.addEventListener('scroll', () => {
+  const One = window.scrollY;
+  console.log(One);
+  if (Math.ceil(One) > 4200 && Math.ceil(One) < 5000) {
+    interludeContainer.classList.remove('opacity');
+  } else {
+    interludeContainer.classList.add('opacity');
+  }
+});
+
 const secondH1 = intro.querySelector('.secondH1');
 
 window.addEventListener('scroll', () => {
@@ -125,7 +137,7 @@ const button2 = document.getElementsByClassName('button-2');
 const button3 = document.getElementsByClassName('button-3');
 const button4 = document.getElementsByClassName('button-4');
 
-const interludeContainer = document.querySelector('.interlude-container');
+// "taking out interludeContainer const in order to make and another effect sooner"
 const arrayOfTabs = [tab1, tab2, tab3, tab4];
 
 function openTab1() {
