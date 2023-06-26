@@ -98,14 +98,15 @@ section.interlude {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: 0.33s;
-  -o-transition: 0.33s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  transition: opacity 2s;
 }
 
 .opacity {
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 section div.background {
   position: relative;
