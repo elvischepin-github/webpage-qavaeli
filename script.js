@@ -82,7 +82,7 @@ const interludeContainer = document.querySelector('.interlude-container');
 window.addEventListener('scroll', () => {
   const One = window.scrollY;
   console.log(One);
-  if (One > 4200 && One < 5000) {
+  if (One > 4300 && One < 5000) {
     interludeContainer.classList.remove('opacity');
   } else {
     interludeContainer.classList.add('opacity');
