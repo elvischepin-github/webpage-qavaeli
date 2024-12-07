@@ -72,10 +72,10 @@ h1.scrolledSecond {
 /* Interlude (middle) */
 
 section.interlude {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background-color: black;
   /* border: 1px solid white; */
-  height: 850px;
+  height: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@ section div.background {
   justify-content: center;
 }
 div.interlude-container {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,6 +208,7 @@ article div.glass {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   z-index: -1;
+  transition: 1s;
 }
 article.tab-content {
   display: none;
@@ -259,7 +260,7 @@ p.tab-paragraph {
 .outro video {
   height: 90vh;
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 /* Mobile */
 .mobile {
