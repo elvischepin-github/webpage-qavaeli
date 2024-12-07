@@ -28,7 +28,7 @@ let scene = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0,
 })
-  .addIndicators({ name: "FRONTEND", ident: 600 }) // ⛳️
+  // .addIndicators({ name: "FRONTEND", ident: 600 }) // ⛳️
   .setPin(intro) // Stuck scroll
   .addTo(controller);
 
@@ -59,7 +59,7 @@ let scene2 = new ScrollMagic.Scene({
   triggerElement: outro,
   triggerHook: 0,
 })
-  .addIndicators({ name: "BACKEND", indent: 300 }) // ⛳️
+  // .addIndicators({ name: "BACKEND", indent: 300 }) // ⛳️
   .setPin(outro) // Stuck scroll
   .addTo(controller);
 
