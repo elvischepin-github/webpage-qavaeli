@@ -72,6 +72,7 @@ h1.scrolledSecond {
 /* Interlude (middle) */
 
 section.interlude {
+  margin-top: 100px;
   background-color: black;
   /* border: 1px solid white; */
   height: 850px;
@@ -80,13 +81,10 @@ section.interlude {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 2s;
-  opacity: 1;
-}
-.opacity {
+  transition: 2.5s;
   opacity: 0;
-  transition: 2s;
 }
+
 section div.background {
   position: relative;
   display: -webkit-box;
@@ -96,6 +94,7 @@ section div.background {
   justify-content: center;
 }
 div.interlude-container {
+  margin-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +259,7 @@ p.tab-paragraph {
 .outro video {
   height: 90vh;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 /* Mobile */
 .mobile {
