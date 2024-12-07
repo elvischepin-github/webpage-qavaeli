@@ -28,7 +28,7 @@ let scene = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0,
 })
-  // .addIndicators({ name: "FRONTEND", ident: 600 }) // ⛳️
+  .addIndicators({ name: "FRONTEND", ident: 600 }) // ⛳️
   .setPin(intro) // Stuck scroll
   .addTo(controller);
 
@@ -55,11 +55,11 @@ animateVideo1();
 // SCROLL MAGIC 2@2@2@2@2@2@2@2@2@2@2@2@2@2@2@2@2
 //      Scene 2
 let scene2 = new ScrollMagic.Scene({
-  duration: 3500,
+  duration: 4000,
   triggerElement: outro,
   triggerHook: 0,
 })
-  // .addIndicators({ name: "BACKEND", indent: 300 }) // ⛳️
+  .addIndicators({ name: "BACKEND", indent: 300 }) // ⛳️
   .setPin(outro) // Stuck scroll
   .addTo(controller);
 
@@ -105,7 +105,7 @@ window.addEventListener("scroll", () => {
   const One = window.scrollY;
   console.log("window.scrollY: ", One);
 
-  if (One > 4200 && One < 5000) {
+  if (One > 4300 && One < 5000) {
     interlude.style.opacity = 1;
   } else {
     interlude.style.opacity = 0;
@@ -150,6 +150,9 @@ window.addEventListener("scroll", () => {
 
 // TABS DISPLAY
 const tabs = document.getElementsByClassName("tab-content");
+const interludeContainer = document.getElementsByClassName(
+  "interlude-container"
+)[0];
 
 const tab1 = document.getElementById("tab-1");
 const tab2 = document.getElementById("tab-2");
